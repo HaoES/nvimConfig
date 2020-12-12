@@ -21,8 +21,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "install airline
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
-    " Ranger plugin 
-    Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
       " fuzzyfile
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
@@ -34,6 +32,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-rhubarb'
     Plug 'junegunn/gv.vim'
+    " which key plugin 
+    Plug 'liuchengxu/vim-which-key'
 call plug#end()
 
 autocmd VimEnter *

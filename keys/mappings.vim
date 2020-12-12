@@ -32,3 +32,6 @@ nnoremap <C-l> <C-w>l
 
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da
+
+"This unsets the last search pattern register by hitting return
+nnoremap <CR> :noh<CR><CR>
