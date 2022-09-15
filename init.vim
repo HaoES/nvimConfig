@@ -16,9 +16,10 @@ Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
 Plug 'https://github.com/vim-airline/vim-airline' " Status bar
 Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
 Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
-Plug 'https://github.com/neoclide/coc.nvim'  " Auto Completion
 Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
 Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
+Plug 'neoclide/coc.nvim', {'branch': 'release'}  " autocomplete
+Plug 'honza/vim-snippets'
 Plug 'nvim-lua/plenary.nvim' 
 Plug 'nvim-treesitter/nvim-treesitter'  
 Plug 'ryanoasis/vim-devicons'
@@ -47,3 +48,4 @@ inoremap <expr> <Tab> pumvisible() ? "<C-n>" : "<Tab>"
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:python3_host_prog = '/usr/bin/python3'
