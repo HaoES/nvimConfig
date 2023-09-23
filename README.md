@@ -1,12 +1,10 @@
 # Nvim Configuration
 
 
-This repo contains the config file [init.vim][1] for nvim  
+This repo contains the config lua files for nvim  
 
-0. Install the last stable version of nvim from PPA
-1. Install vim plug: https://github.com/junegunn/vim-plug
-2. Open nvim and type ":PlugInstall" to install the plugins
-3. Install node.js for coc nvim
-4. Use ":checkhealth" and fix the warnings
+0. Install nvim (build from source) (0.9.+)
+1. Put the nvim folder into ~/.config/
 
-[1]: https://github.com/HaoES/nvimConfig/blob/master/init.vim "Title"
+[1] Based on the following [video](https://www.youtube.com/watch?v=w7i4amO_zaE&ab_channel=ThePrimeagen)
+
