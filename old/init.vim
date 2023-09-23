@@ -11,6 +11,7 @@
 :set nohlsearch
 
 call plug#begin()
+Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
 Plug 'https://github.com/preservim/nerdtree' " NerdTree
 Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
 Plug 'https://github.com/vim-airline/vim-airline' " Status bar
@@ -29,6 +30,8 @@ set encoding=UTF-8
 call plug#end()
 
 nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
 
 nnoremap <C-J> <C-W><C-J>
@@ -42,6 +45,9 @@ nmap <F8> :TagbarToggle<CR>
 :set completeopt-=preview " For No Previews
 
 :colorscheme gruvbox
+
+let g:NERDTreeDirArrowExpandable="+"
+let g:NERDTreeDirArrowCollapsible="~"
 
 inoremap <expr> <Tab> pumvisible() ? "<C-n>" : "<Tab>"
 
